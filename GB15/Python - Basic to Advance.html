@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="CEO" content="Nikhil Yadav">
+    <meta name="description" content="Unlock Your IT Potential with ITLearnix">
+
+    <!-- Title -->
+    <title>ITLearnix - Online Courses &amp; IT Training</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../static/assets/images/logo/fav.png" type="image/x-icon">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/assets/css/vendors/bootstrap.min.css">
+
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="../static/assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="../static/assets/fonts/icomoon/style.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="../static/assets/css/vendors/magnific-popup.min.css">
+
+    <!-- NoUi Range Slider -->
+    <link rel="stylesheet" href="../static/assets/css/vendors/nouislider.min.css">
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="../static/assets/css/vendors/swiper-bundle.min.css">
+
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="../static/assets/css/vendors/nice-select.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="../static/assets/css/vendors/aos.min.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../static/assets/css/responsive.css">
+</head>
+
+
+<body class="theme-color-1" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader" ></div>
+    </div>
+    <!-- Preloader end -->
+<!-- Header-area start -->
+<header class="header-area">
+    <!-- Start mobile menu -->
+    <div class="mobile-menu" style="display: none;">
+        <div class="container">
+            <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/courses_1" class="nav-link active">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/mentors" class="nav-link ">Mentors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blogs" class="nav-link ">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-item icon-down-20">
+            <div class="item">
+                <div class="social-link style-2 size-md d-flex justify-content-center">
+                    <a class="rounded-pill d-flex align-items-center justify-content-center" href="https://www.instagram.com/itlearnix" target="_blank" title="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="rounded-pill d-flex align-items-center justify-content-center" href="https://t.me/nishantsarawat" target="_blank" title="telegram">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a class="rounded-pill d-flex align-items-center justify-content-center" href="https://www.youtube.com/@itlearnix" target="_blank" title="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End mobile menu -->
+
+    <div class="main-responsive-nav">
+        <div class="container">
+            <!-- Mobile Logo -->
+            <div class="logo">
+                <a href="/" target="_self" title="ITLearnix">
+                    <img class="lazyloaded" src="../static/assets/images/logo/logo-1.png" data-src="../static/assets/images/logo/logo-1.png" alt="Brand Logo">
+                </a>
+            </div>
+            <!-- Menu toggle button -->
+            <button class="menu-toggler" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="main-navbar" style="">
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="/" target="_self" title="ITLearnix">
+                        <img class="lazyloaded" src="../static/assets/images/logo/logo-1.png" data-src="../static/assets/images/logo/logo-1.png" alt="Brand Logo">
+                    </a>
+                    <!-- Navigation items -->
+                    <div class="collapse navbar-collapse">
+                        <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " href="/">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/courses_1" class="nav-link toggle active">Courses </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/mentors" class="nav-link toggle ">Mentors </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/blogs" class="nav-link toggle ">Blogs </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more-option mobile-item">
+                        <div class="item">
+                            <div class="social-link style-2 size-md d-flex justify-content-center">
+                                <a class="rounded-pill d-flex align-items-center justify-content-center" href="https://www.instagram.com/itlearnix" target="_blank" title="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="rounded-pill d-flex align-items-center justify-content-center" href="https://t.me/nishantsarawat" target="_blank" title="telegram">
+                        <i class="fab fa-dribbble"></i>
+                    </a>                                <a class="rounded-pill d-flex align-items-center justify-content-center" href="https://www.youtube.com/@itlearnix" target="_blank" title="youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header-area end -->
+
+    <!-- Course-details-area start -->
+    <div class="course-details-area pb-60">
+        <!-- Course title -->
+        <div class="course-banner bg-img bg-cover pb-5" data-bg-image="../static/assets/images/breadcrumb-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="banner-content" data-aos="fade-up">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Course Details</li>
+                                </ol>
+                            </nav>
+                            <h3 class="title mb-15 mt-10">
+                                Python - Basic to Advance
+                            </h3>
+                            <p class="text mb-20">
+                                Ready to advance your Python skills? Enroll in our comprehensive course covering basic to advanced concepts and unlock your expertise.
+                            </p>
+                            <ul class="list-group list-group-horizontal align-items-center">
+                                <li class="d-inline-block">
+                                    <div class="ratings size-md gap-2">
+                                        <span class="badge bg-success size-md">Beginners</span>
+                                        <div class="rate bg-img" data-bg-image="../static/assets/images/rate-star-md.png">
+                                            <div class="rating-icon bg-img" data-bg-image="../static/assets/images/rate-star-md.png"></div>
+                                        </div>
+                                        <span class="ratings-total">(4.3)</span>
+                                    </div>
+                                </li>
+                                <li class="d-inline-block icon-start font-sm">
+                                    <i class="fas fa-user"></i>32+ Enrolled
+                                </li>
+                                <li class="d-inline-block icon-start font-sm">
+                                    <i class="fas fa-book-open"></i>7 Modules
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- course-description -->
+        <div class="container">
+            <div class="row gx-xl-5">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <!-- course-details-tab -->
+                    <div class="course-details-tab pt-5">
+                        <div class="tabs-navigation mb-40">
+                            <ul class="nav nav-tabs" data-hover="fancyHover">
+                                <li class="nav-item active">
+                                    <button class="nav-link hover-effect btn-md rounded-pill active" data-bs-toggle="tab" data-bs-target="#tab1" type="button">Overview</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link hover-effect btn-md rounded-pill" data-bs-toggle="tab" data-bs-target="#tab2" type="button">Course Content</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link hover-effect btn-md rounded-pill" data-bs-toggle="tab" data-bs-target="#tab3" type="button">Details</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link hover-effect btn-md rounded-pill" data-bs-toggle="tab" data-bs-target="#tab4" type="button">Instructor</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <!-- Overview -->
+                            <div class="tab-pane slide slide show active" id="tab1">
+                                <div class="content pb-20">
+                                    <h5 class="title mb-20">What you'll learn</h5>
+                                    <p class="text">
+                                        Master Python from basics to advanced level in our comprehensive course. Learn the fundamentals of Python programming and progress to advanced topics such as object-oriented programming, web development, data analysis, and more. Perfect for learners of all levels, from beginners to experienced coders looking to enhance their skills.
+                                    </p>
+                                    <div class="row gl-xl-5 mt-20">
+                                        <div class="col-lg-6">
+                                            <ul class="info-list list-unstyled mb-20">
+                                                <li>Master the Python programming language from basic to advanced level</li>
+                                                <li>Understand Python syntax, data structures, and object-oriented programming (OOP)</li>
+                                                <li>Learn advanced concepts such as decorators, generators, and context managers</li>
+                                                <li>Explore file handling, regular expressions, and error handling in Python</li>
+
+
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ul class="info-list list-unstyled mb-20">
+
+                                                <li>Gain proficiency in working with databases using Python</li>
+                                                <li>Understand multithreading, multiprocessing, and asynchronous programming in Python</li>
+                                                <li>Learn about network programming and web scraping with Python</li>
+                                                <li>Build real-world projects to apply your Python skills</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Course content -->
+                            <div class="tab-pane slide" id="tab2">
+                                <div class="accordion pb-20" id="courseAccordion">
+                                    <div class="accordion-item radius-0 mb-20">
+                                        <h6 class="accordion-header" id="heading1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                Module 1 - Introduction to Python
+
+                                            </button>
+                                        </h6>
+                                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#courseAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="course-content-list list-unstyled">
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Overview of Python and its features</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Setting up Python environment</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Python syntax and data types</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Control flow and loops in Python</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item radius-0 mb-20">
+                                        <h6 class="accordion-header" id="heading2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                                Module 2 - Functions and Modules
+                                            </button>
+                                        </h6>
+                                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#courseAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="course-content-list list-unstyled">
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Defining and calling functions</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Working with function arguments and return values</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Creating and importing modules</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Understanding namespaces and scope</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item radius-0 mb-20">
+                                        <h6 class="accordion-header" id="heading3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                               Module 3 - Object-Oriented Programming (OOP)
+                                            </button>
+                                        </h6>
+                                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#courseAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="course-content-list list-unstyled">
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Introduction to OOP concepts</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Classes, objects, and attributes</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Inheritance and polymorphism</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Working with class methods and static methods</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item radius-0 mb-20">
+                                        <h6 class="accordion-header" id="heading4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                               Module 4 - Advanced Python Concepts
+                                            </button>
+                                        </h6>
+                                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#courseAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="course-content-list list-unstyled">
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Decorators and function annotations</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Generators and iterators</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Context managers and the "with" statement</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Working with files and directories</span>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item radius-0 mb-20">
+                                        <h6 class="accordion-header" id="heading5">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                               Module 5 - Database Programming with Python
+                                            </button>
+                                        </h6>
+                                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#courseAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="course-content-list list-unstyled">
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Introduction to databases and SQL</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Connecting to databases using Python</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Executing SQL queries and transactions</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Working with SQLite and MySQL databases</span>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item radius-0 mb-20">
+                                        <h6 class="accordion-header" id="heading6">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                                Module 6 - Advanced Topics in Python
+                                            </button>
+                                        </h6>
+                                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#courseAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="course-content-list list-unstyled">
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Multithreading and multiprocessing</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Asynchronous programming with asyncio</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Networking and socket programming</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="course-content">
+                                                        <div class="content-left">
+                                                            <span class="text content-left">• Web scraping with BeautifulSoup and requests</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<div class="accordion-item radius-0 mb-20">
+    <h6 class="accordion-header" id="heading7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+            Module 7 - Real-World Projects
+        </button>
+    </h6>
+    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#courseAccordion">
+        <div class="accordion-body">
+            <ul class="course-content-list list-unstyled">
+                <li class="course-content">
+                    <div class="content-left">
+                        <span class="text content-left">• Building a web crawler</span>
+                    </div>
+                </li>
+                <li class="course-content">
+                    <div class="content-left">
+                        <span class="text content-left">• Creating a chatbot using NLTK</span>
+                    </div>
+                </li>
+                <li class="course-content">
+                    <div class="content-left">
+                        <span class="text content-left">• Developing a data visualization tool</span>
+                    </div>
+                </li>
+                <li class="course-content">
+                    <div class="content-left">
+                        <span class="text content-left">• Designing a simple web application</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+                                </div>
+                            </div>
+                            <!-- Details -->
+                            <div class="tab-pane" id="tab3">
+                                <div class="content pb-20">
+                                    <h5 class="title mb-20">Requirements</h5>
+                                    <ul class="info-list list-unstyled mb-20">
+                                        <li>No prior programming experience required</li>
+                                        <li>A computer with internet access</li>
+                                        <li>Installation of Python (detailed instructions will be provided in the course)</li>
+                                    </ul>
+                                </div>
+                                <div class="overview pb-20">
+                                    <h5 class="title mb-20">Description</h5>
+                                    <p class="text">
+                                        Welcome to the Python - Basic to Advance course! This comprehensive course is designed to take you from a beginner to an advanced Python programmer. Whether you're new to programming or already familiar with another language, this course will equip you with the skills and knowledge to master Python.
+                                    </p>
+                                    <p class="text">
+                                        The course starts with an introduction to Python, covering the basics of syntax and data types. You'll then progress to more advanced topics such as functions, modules, and object-oriented programming (OOP). Throughout the course, you'll learn by doing, with hands-on exercises and projects that reinforce your understanding of Python concepts.
+                                    </p>
+                                    <ul class="info-list list-unstyled mb-20">
+                                        <li>The course covers advanced topics in Python programming.</li>
+                                        <li>Topics covered include decorators, generators, context managers, and file handling.</li>
+                                        <li>Students will learn how to work with databases using Python, including SQL queries and connecting to popular database systems.</li>
+                                        <li>Advanced Python concepts such as multithreading, multiprocessing, asynchronous programming, networking, and web scraping are explored.</li>
+                                        <li>The course emphasizes practical experience by building real-world projects that showcase Python skills.</li>
+                                        <li>By the end of the course, students will have a strong foundation in Python programming and the ability to handle complex projects and challenges.</li>
+                                        <li>The skills acquired in the course can be applied to various career paths, including software development, data analysis, and web development.</li>
+                                        <li>Interested individuals are encouraged to enroll and start their journey towards becoming proficient in Python programming.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Instructor -->
+                            <div class="tab-pane slide" id="tab4">
+                                <div class="mentor mb-40">
+                                    <div class="mentor-info">
+                                        <div class="mentor-img">
+                                            <a href="/mentor-nikhil" target="_self" title="Link" class="lazy-container ratio ratio-1-1 radius-sm">
+                                                <img class="lazyload" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/avatar/nikhil.jpg" alt="Avatar">
+                                            </a>
+                                        </div>
+                                        <div class="mentor-content">
+                                            <h6 class="mb-1">
+                                                <a href="/mentor-nikhil" target="_self" title="Link">Nikhil Yadav</a>
+                                            </h6>
+                                            <span class="subtitle font-sm">
+                                                Data Scientist, ML Engineer, Researcher, MCA at KIET Group of Institutions
+                                            </span>
+                                            <ul class="list-group list-group-horizontal align-items-center mt-1">
+                                                <li class="d-inline-block">
+                                                    <div class="ratings">
+                                                        <div class="rate bg-img" data-bg-image="../static/assets/images/rate-star.png">
+                                                            <div class="rating-icon bg-img" data-bg-image="../static/assets/images/rate-star.png"></div>
+                                                        </div>
+                                                        <span class="ratings-total">(4.3)</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-inline-block icon-start font-sm">
+                                            <i class="fas fa-user"></i>32+ Enrolled
+                                        </li>
+                                        <li class="d-inline-block icon-start font-sm">
+                                            <i class="fas fa-book-open"></i>7 Modules
+                                        </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content-text mt-20">
+                                        <p>
+                                            Nikhil Yadav is the CEO and Founder of ITLearnix, a leading online platform providing IT skills worldwide. With a Master's degree in Computer Applications (MCA) from KIET Group of Institutions and 1 year of experience as a Data Scientist, Nikhil is a highly accomplished professional in the field of Machine Learning and Artificial Intelligence.
+                                        </p>
+                                        <p>
+                                            Passionate about sharing knowledge and empowering individuals, Nikhil serves as a dedicated educator and mentor. Her expertise in data science enables her to handle complex datasets, extract valuable insights, and make data-driven decisions. With a strong commitment to continuous learning and a talent for inspiring others, Nikhil is a valuable asset in the educational and professional landscape.
+                                        </p>
+                                    </div>
+                                    <div class="social-link icon-only mt-20">
+                                        <span>Social Link:</span>
+                                        <a href="https://www.linkedin.com/in/yadavnikhilrao" target="_blank" class="color-primary"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://yadavnikhilrao.github.io/portfolio/" target="_blank" class="color-primary"><i class="fab fa-dribbble"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <aside class="widget-area bg-white shadow-md radius-md">
+                        <div class="widget widget-enroll p-25">
+                            <figure class="course-img">
+                                <img src="../static/assets/images/course/python.jpg" alt="course">
+                            </figure>
+                            <div class="course-price mt-15">
+                                <!-- <h4 class="new-price">₹ 2000</h4>
+                                <span class="prev-price">₹ 2499</span> -->
+                            </div>
+                            <div class="btn-groups mt-15">
+                                <a href="/register" class="btn btn-lg btn-primary radius-sm w-100" target="_self">Register</a>
+                            </div>
+                            <div class="icon-start text-center mt-10 font-sm">
+                                <span>10-Day Money-Back Guarantee</span>
+                            </div>
+                            <ul class="toggle-list list-unstyled mt-20" id="toggleList" data-toggle-show="5">
+                                <li class="icon-start">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        <span class="name">Duration :</span>
+                                    </span>
+                                    <span>3 Months</span>
+                                </li>
+                                <li class="icon-start">
+                                    <span>
+                                        <i class="fas fa-user"></i>
+                                        <span class="name">Total Enrolled :</span>
+                                    </span>
+                                    <span>32</span>
+                                </li>
+                                <li class="icon-start">
+                                    <span>
+                                         <i class="fas fa-tag"></i>
+                                        <span class="name">Course Label :</span>
+                                    </span>
+                                    <span>Beginners</span>
+                                </li>
+                                <li class="icon-start">
+                                    <span>
+                                          <i class="fas fa-certificate"></i>
+                                        <span class="name">Certificate:</span>
+                                    </span>
+                                    <span>Yes</span>
+                                </li>
+                                <li class="icon-start">
+                                    <span>
+                                        <i class="fas fa-globe"></i>
+                                        <span class="name">Language:</span>
+                                    </span>
+                                    <span>English, Hindi</span>
+                                </li>
+                            </ul>
+                            <div class="btn-text show-more-btn" data-toggle-btn="toggleList">
+                                Show More
+                            </div>
+
+                        </div>
+                    </aside>
+                    <!-- Spacer -->
+                    <div class="pb-40"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course-details-area start -->
+
+
+      <!-- Course-area start -->
+    <section class="course-area popular pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-inline mb-50" data-aos="fade-up">
+                        <h2 class="title">Most Popular <span>Courses</span></h2>
+                        <div class="cta-btn">
+                            <a href="/courses_1" class="btn btn-lg btn-primary rounded-pill" title="See All Course" target="_self">See All Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- Slider main container -->
+                    <div class="swiper course-slider" id="course-slider-1" data-slides-per-view="4" data-swiper-loop="true" data-aos="fade-up">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="course-default border radius-md mb-30">
+                                    <figure class="course-img">
+                                        <a href="/Full-Stack-Data-Science" title="Image" target="_self" class="lazy-container ratio ratio-2-3">
+                                            <img class="lazyload" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/course/data-science.jpg" alt="course">
+                                        </a>
+                                        <div class="hover-show">
+                                            <a href="/Full-Stack-Data-Science" class="btn btn-md btn-primary rounded-pill" title="Enroll Now" target="_self">View</a>
+                                        </div>
+                                    </figure>
+                                    <div class="course-details">
+                                        <div class="p-3">
+                                            <a href="/Full-Stack-Data-Science" target="_self" title="Design" class="tag font-sm color-primary mb-1">Data Science</a>
+                                            <h6 class="course-title lc-2 mb-0">
+                                                <a href="/Full-Stack-Data-Science" target="_self" title="Link">
+                                                    Full Stack Data Science
+                                                </a>
+                                            </h6>
+                                            <div class="authors mt-15">
+                                                <div class="author">
+                                                    <img class="lazyload blur-up radius-sm" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/avatar/nikhil.jpg" alt="Image">
+                                                    <span class="font-sm">
+                                                        <a href="/Full-Stack-Data-Science" target="_self" >
+                                                            Nikhil Yadav
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <span class="font-sm icon-start"><i class="fas fa-clock"></i>6 Months</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="course-bottom-info px-3 py-2">
+                                            <span class="font-sm"><i class="fas fa-rupee-sign"></i> 2499</span>
+                                            <span class="font-sm"><i class="fas fa-book"></i>6 Modules</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="course-default border radius-md mb-30">
+                                    <figure class="course-img">
+                                        <a href="/Business-Analytics-for-Beginners" title="Image" target="_self" class="lazy-container ratio ratio-2-3">
+                                            <img class="lazyload" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/course/business-analytics.jpg" alt="course">
+                                        </a>
+                                        <div class="hover-show">
+                                            <a href="/Business-Analytics-for-Beginners" class="btn btn-md btn-primary rounded-pill" title="Enroll Now" target="_self">View</a>
+                                        </div>
+                                    </figure>
+                                    <div class="course-details">
+                                        <div class="p-3">
+                                            <a href="/Business-Analytics-for-Beginners" target="_self" title="Development" class="tag font-sm color-primary mb-1">Business</a>
+                                            <h6 class="course-title lc-2 mb-0">
+                                                <a href="/Business-Analytics-for-Beginners" target="_self" title="Link">
+                                                   Business Analytics for Biginners
+                                                </a>
+                                            </h6>
+                                            <div class="authors mt-15">
+                                                <div class="author">
+                                                    <img class="lazyload blur-up radius-sm" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/avatar/prakriti.jpg" alt="Image">
+                                                    <span class="font-sm">
+                                                        <a href="/Business-Analytics-for-Beginners" target="_self" title="Dr. Angela">
+                                                            Prakriti Yadav
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <span class="font-sm icon-start"><i class="fas fa-clock"></i>4 Months</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="course-bottom-info px-3 py-2">
+                                            <span class="font-sm"><i class="fas fa-rupee-sign"></i> 1499</span>
+                                            <span class="font-sm"><i class="fas fa-book"></i>5 Modules</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="course-default border radius-md mb-30">
+                                    <figure class="course-img">
+                                        <a href="/Machine-Learning-with-Python" title="Image" target="_self" class="lazy-container ratio ratio-2-3">
+                                            <img class="lazyload" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/course/machine-learning.jpg" alt="course">
+                                        </a>
+                                        <div class="hover-show">
+                                            <a href="/Machine-Learning-with-Python" class="btn btn-md btn-primary rounded-pill" title="Enroll Now" target="_self">View</a>
+                                        </div>
+                                    </figure>
+                                    <div class="course-details">
+                                        <div class="p-3">
+                                            <a href="/Machine-Learning-with-Python" target="_self" title="Marketing" class="tag font-sm color-primary mb-1">Artificial Intelligence</a>
+                                            <h6 class="course-title lc-2 mb-0">
+                                                <a href="/Machine-Learning-with-Python" target="_self" title="Link">
+                                                    Machine Learning with Python
+                                                </a>
+                                            </h6>
+                                            <div class="authors mt-15">
+                                                <div class="author">
+                                                    <img class="lazyload blur-up radius-sm" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/avatar/nikhil.jpg" alt="Image">
+                                                    <span class="font-sm">
+                                                        <a href="/Machine-Learning-with-Python" target="_self" >
+                                                            Nikhil Yadav
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <span class="font-sm icon-start"><i class="fas fa-clock"></i>2 Months</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="course-bottom-info px-3 py-2">
+                                            <span class="font-sm"><i class="fas fa-rupee-sign"></i> 1499</span>
+                                            <span class="font-sm"><i class="fas fa-book"></i>7 Modules</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="course-default border radius-md mb-30">
+                                    <figure class="course-img">
+                                        <a href="/Python-Full-Stack-Development" title="Image" target="_self" class="lazy-container ratio ratio-2-3">
+                                            <img class="lazyload" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/course/python-fullstack.jpg" alt="course">
+                                        </a>
+                                        <div class="hover-show">
+                                            <a href="/Python-Full-Stack-Development" class="btn btn-md btn-primary rounded-pill" title="Enroll Now" target="_self">View</a>
+                                        </div>
+                                    </figure>
+                                    <div class="course-details">
+                                        <div class="p-3">
+                                            <a href="/Python-Full-Stack-Development" target="_self" title="Business" class="tag font-sm color-primary mb-1">Development</a>
+                                            <h6 class="course-title lc-2 mb-0">
+                                                <a href="/Python-Full-Stack-Development" target="_self" title="Link">
+                                                    Python Full Stack Development
+                                                </a>
+                                            </h6>
+                                            <div class="authors mt-15">
+                                                <div class="author">
+                                                    <img class="lazyload blur-up radius-sm" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/avatar/nikhil.jpg" alt="Image">
+                                                    <span class="font-sm">
+                                                        <a href="/Python-Full-Stack-Development" target="_self" title="Kyle Pew.">
+                                                            Nikhil Yadav
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <span class="font-sm icon-start"><i class="fas fa-clock"></i>6 Month</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="course-bottom-info px-3 py-2">
+                                            <span class="font-sm"><i class="fas fa-rupee-sign"></i> 2000</span>
+                                            <span class="font-sm"><i class="fas fa-book"></i>8 Modules</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination position-static" id="course-slider-1-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course-area end -->
+
+     <!-- Footer-area start -->
+    <footer class="footer-area ">
+        <div class="footer-top pt-80 bg-primary-light ">
+            <div class="container">
+                <div class="row gx-xl-5 justify-content-between">
+                    <div class=" col-sm-6 col-sm-12">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="100">
+                            <!-- Logo -->
+                            <div class="logo mb-20">
+                                <a class="navbar-brand" href="/" target="_self" title="Link">
+                                    <img class="lazyload" src="../static/assets/images/placeholder.png" data-src="../static/assets/images/logo/logo-1.png" alt="Brand Logo">
+                                </a>
+                            </div>
+            <p class="mt-3 footer-bio">At ITLearnix, we are committed to empowering individuals in their IT journey.</p>
+            <h6 class="fw-normal mt-3" style="font-size: 14px;"><i class="fas fa-map-marker-alt fs-5 align-middle" style="color: #00BFFF; font-size: 14px;"></i> Ghaziabad, Uttar Pradesh</h6>
+            <h6 class="fw-normal mt-3" style="font-size: 14px;"><i class="fas fa-envelope fs-5 align-middle" style="color: #00BFFF; font-size: 14px;"></i> itlearnix@gmail.com</h6>
+            <h6 class="fw-normal mt-3 mb-0" style="font-size: 14px;"><i class="fas fa-phone fs-5 align-middle" style="color: #00BFFF; font-size: 14px;"></i> +91 7500007444</h6>
+         </div>
+    </div>
+    <div class="copy-right-area border-top ptb-30">
+        <div class="container">
+            <div class="copy-right-content">
+                <span>
+                    © <span id="footerDate">2023</span> <a>ITLearnix</a>. All Rights Reserved |
+                </span>
+                <span class="design_by">Design by <a class="color-primary" >ITLearnix</a></span>  </div>
+        </div>
+    </div>
+    <!-- Shapes -->
+    <div class="shape">
+        <img class="shape-1 ls-is-cached lazyloaded" src="../static/assets/images/shape/shape-3.png" data-src="../static/assets/images/shape/shape-3.png" alt="Shape">
+        <img class="shape-2 ls-is-cached lazyloaded" src="../static/assets/images/shape/shape-1.png" data-src="../static/assets/images/shape/shape-1.png" alt="Shape">
+        <img class="shape-3 ls-is-cached lazyloaded" src="../static/assets/images/shape/shape-6.png" data-src="../static/assets/images/shape/shape-6.png" alt="Shape">
+        <img class="shape-4 ls-is-cached lazyloaded" src="../static/assets/images/shape/shape-4.png" data-src="../static/assets/images/shape/shape-4.png" alt="Shape">
+    </div>
+    </footer>
+    <!-- Footer-area end-->
+
+    <!-- Go top -->
+    <div class="go-top"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Magic Cursor -->
+
+
+    <!-- Jquery JS -->
+    <script src="../static/assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../static/assets/js/vendors/bootstrap.min.js"></script>
+    <!-- Counter JS -->
+    <script src="../static/assets/js/vendors/jquery.counterup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="../static/assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="../static/assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Noui Range Slider JS -->
+    <script src="../static/assets/js/vendors/nouislider.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="../static/assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="../static/assets/js/vendors/lazysizes.min.js"></script>
+    <!-- AOS JS -->
+    <script src="../static/assets/js/vendors/aos.min.js"></script>
+    <!-- Mouse Hover JS -->
+    <script src="../static/assets/js/vendors/mouse-hover-move.js"></script>
+    <!-- Main script JS -->
+    <script src="../static/assets/js/script.js"></script>
+
+
+</body>
+</html>
