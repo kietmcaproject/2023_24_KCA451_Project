@@ -1,0 +1,51 @@
+.table_cont{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: auto;
+    max-height: 65vh;
+    overflow-y: auto;
+    min-width: fit-content;
+    table{
+        border-collapse: collapse;
+        border: 1px solid #bbbbbb;
+    }
+    th,td{
+        padding: 0.6rem 0.7rem;
+        text-align: center;
+    }
+   
+    .tabHead{
+        background-color: #cecece;
+        color: var(--primary);
+        th{
+           font-size: 1.4rem; 
+        }
+    }
+
+    .tabBody{
+        td{
+            font-size: 1.1rem;
+        }
+        .pending{
+            background-color: hsl(39, 87%, 49%);
+            padding: 0.4rem;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .accepted{
+            background-color: rgb(0, 207, 0);
+            padding: 0.4rem;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .rejected{
+            background-color: rgb(252, 18, 49);
+            padding: 0.4rem;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
+    }
+}

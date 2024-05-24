@@ -1,0 +1,36 @@
+
+
+.section{
+    padding: 2rem 0rem;
+    padding-bottom: 4rem;
+    box-shadow: 1px 1px 10px rgb(148, 148, 148);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.section_heading{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0rem 2rem;
+   
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.section_heading h3{
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.worker_list{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}

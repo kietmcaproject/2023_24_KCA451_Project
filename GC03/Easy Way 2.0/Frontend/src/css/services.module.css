@@ -1,0 +1,33 @@
+.container{
+    min-height: 90vh;
+}
+.search{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.heading{
+    margin-right: auto;
+    padding: 0.4rem;
+    color: var(--primary);
+}
+.top_workers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.top_more
+{
+    padding: 1rem;
+}
+.search_box{
+    position: relative;
+    max-height: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 1px rgb(190, 190, 190);
+}
+

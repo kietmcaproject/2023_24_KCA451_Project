@@ -1,0 +1,31 @@
+.table_cont{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+
+    table{
+        border-collapse: collapse;
+        border: 1px solid #bbbbbb;
+    }
+    th,td{
+        padding: 1rem;
+    }
+   
+    .tabHead{
+        background-color: #cecece;
+        color: var(--primary);
+        th{
+           font-size: 1.4rem; 
+        }
+    }
+
+    .tabBody{
+        td{
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+.container{
+    display: flex;
+    min-height: 80vh;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left{
+    min-width: 250px;
+    padding: 1rem;
+}
+.services{
+    margin-top: 0.8rem;
+    max-width: 250px;
+}
+.services_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list_item{
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #868484;
+}
+.profile_img img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.logout{
+    margin-top: 2rem;
+}
+.right{
+    padding: 1rem;
+}
+.right h4{
+    font-size: 1.6rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+.name h3{
+    font-size: 2rem;
+}
+.name p{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+.name h4{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+.name span{
+    font-size: 2rem;
+    color: blue;
+}
+.name span:nth-child(5){
+    color: #868484;
+}
+
+.about {
+    margin-top: 0.8rem;
+}
+
+.about_list{
+    display: flex;
+    margin-bottom: 0.8rem;
+    align-items: center;
+}
+
+.about_list h3{
+    min-width: 150px;
+}
+.about_list p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact_btn{
+    display: flex;
+    gap: 1rem;
+}
+.working_list{
+    width: 45%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    padding: 0.2rem;
+}
+
+
+.pending{
+    background-color: hsl(39, 87%, 49%);
+    padding: 0.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.accepted{
+    background-color: rgb(0, 207, 0);
+    padding: 0.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.rejected{
+    background-color: rgb(252, 18, 49);
+    padding: 0.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #bbbbbb;
+}
+th,td{
+    padding: 0.7rem;
+    
+}
+td{
+    border: 1px solid #bbbbbb;
+}
+.tabHead{
+    background-color: #cecece;
+    color: var(--primary);
+    
+}
+.tabHead th{
+    font-size: 1.4rem; 
+ }
+.tabBody td{
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:650px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        justify-content: center;
+    }
+    .left{
+        padding: 1rem;
+        overflow: hidden;
+    }
+    .about{
+        overflow: hidden;
+    }
+    .working_list{
+        width:100%;
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c9d4f8;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  .dialog .acceptButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dialog .closeDialog {
+    margin-right: 0;
+    margin-left: auto;
+    width: 24px;
+    cursor: pointer;
+    border: 1px solid #868484;
+  }
+  .dialog h2 {
+    margin-top: 0;
+  }
+  .dialog button {
+    width: 150px;
+    padding: 0.4rem 0.6rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  .success{
+    background-color: green;
+  }
+  .danger{
+    background-color: red;
+  }

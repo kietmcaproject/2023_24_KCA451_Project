@@ -1,0 +1,44 @@
+.card{
+    background-color: rgb(233, 233, 233);
+    margin-top: 2rem;
+    width: 300px;
+    border: transparent;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem;
+    font-size: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: left;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px;
+}
+.user_img{
+    display: flex;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+.text{
+    padding: 1rem;
+    text-align: justify;
+}
+.quote_up{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+
+}
+.quote_down{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name{
+    color: #0998b8;
+    padding-left: 15px;
+}

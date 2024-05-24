@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 10px;
+}
+
+.contain .cardlogin {
+    height: 550px;
+    width: 60%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px
+}
+
+.contain .cardlogin .form {
+    width: 100%;
+    height: 100%;
+    display: flex
+}
+
+.contain .cardlogin .left-side {
+    width: 50%;
+    height: 100% !important;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden
+}
+
+.left-side img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.contain .cardlogin .right-side {
+    width: 50%;
+    background-color: #efecf2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 80px;
+
+}
+
+.main {
+    display: none
+}
+
+.active {
+    display: block
+}
+
+.register p {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2739
+}
+
+.register p a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 3px
+}
+
+.hello {
+    margin-top: 40px;
+    text-align: center;
+    color: #2a2739;
+    
+}
+
+.hello h4 {
+    margin-top: 5px
+}
+
+.input_text {
+    position: relative;
+    width: 95%;
+    margin-top: 20px
+}
+
+
+.input_text p {
+    margin-top: 4px;
+    font-size: 13px;
+    margin-left: 10px;
+    color: red
+}
+
+.danger {
+    display: none
+}
+
+.input_text p i {
+    margin-right: 2px
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    cursor: pointer;
+    color: #727286
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    cursor: pointer;
+    color: #727286
+}
+
+.recovery {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: end
+}
+
+
+.right-side hr {
+    margin-top: 30px;
+    color: #fff;
+    border: 0;
+    border-top: 1px solid #fff
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    font-size: 13px
+}
+
+.or p {
+    z-index: 2;
+    margin-top: -10px;
+    background-color: #efecf2;
+    padding: 0 4px
+}
+
+.boxes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.boxes span {
+    height: 45px;
+    width: 60px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s
+}
+
+.boxes span img {
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.boxes span:hover img {
+    width: 35px
+}
+
+.boxes span:hover {
+    border: 4px solid #fff
+}
+
+.warning {
+    border: 1px solid red !important
+}
+
+@media (max-width:950px) {
+    .contain .cardlogin {
+        width: 90%;
+    }
+
+    .contain .cardlogin .right-side {
+        border-radius: 10px;
+        width: 100%
+    }
+
+    .contain .cardlogin .left-side {
+        display: none
+    }
+}
