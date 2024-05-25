@@ -1,0 +1,7 @@
+1. User Authentication
+2. Leave Request Management
+3. Leave Approval Workflow
+4. Leave Balances and Entitlements
+6. Notifications and Alerts
+8. Employee Self-Service Portal
+9. Administrative Dashboard
