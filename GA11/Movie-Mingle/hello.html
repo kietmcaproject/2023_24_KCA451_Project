@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question Display with Options</title>
+</head>
+<body>
+<!-- HTML elements for displaying question, options, and a button -->
+<div id="questionDisplay"></div>
+<div id="optionsDisplay"></div>
+<button id="nextButton" disabled>Next</button>
+
+<script>
+// 2D array for storing questions and multiple options
+let questionsWithOptions = [
+    ["What is the capital of France?", ["Paris", "London", "Berlin", "Madrid"]],
+    ["Who wrote 'Romeo and Juliet'?", ["William Shakespeare", "Charles Dickens", "Jane Austen", "Leo Tolstoy"]],
+    ["What is the chemical symbol for water?", ["H2O", "CO2", "NaCl", "O2"]],
+    // Add more questions and options as needed
+];
+
+// Index to keep track of the current question
+let currentQuestionIndex = 0;
+
+// Function to display the current question and options
+function displayQuestion() {
+    let questionDisplay = document.getElementById("questionDisplay");
+    let optionsDisplay = document.getElementById("optionsDisplay");
+    let nextButton = document.getElementById("nextButton");
+
+    // Clear previous question and options
+    questionDisplay.innerHTML = "";
+    optionsDisplay.innerHTML = "";
+
+    // Display current question
+    questionDisplay.textContent = questionsWithOptions[currentQuestionIndex][0];
+
+    // Display options as checkboxes
+    let options = questionsWithOptions[currentQuestionIndex][1];
+    for (let i = 0; i < options.length; i++) {
+        let optionCheckbox = document.createElement("input");
+        optionCheckbox.type = "checkbox";
+        optionCheckbox.value = options[i];
+        optionCheckbox.id = "option" + i;
+        let optionLabel = document.createElement("label");
+        optionLabel.htmlFor = "option" + i;
+        optionLabel.textContent = options[i];
+        optionsDisplay.appendChild(optionCheckbox);
+        optionsDisplay.appendChild(optionLabel);
+        optionsDisplay.appendChild(document.createElement("br"));
+    }
+
+    // Enable or disable Next button based on whether any option is selected
+    nextButton.disabled = true;
+    optionsDisplay.addEventListener("change", function() {
+        let checkboxes = optionsDisplay.querySelectorAll("input[type='checkbox']");
+        let isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+        nextButton.disabled = !isChecked;
+    });
+}
+
+// Event listener for the "Next" button
+document.getElementById("nextButton").addEventListener("click", function() {
+    // Increment the current question index
+    currentQuestionIndex++;
+    // If the current question index exceeds the number of questions, loop back to the first question
+    if (currentQuestionIndex >= questionsWithOptions.length) {
+        currentQuestionIndex = 0;
+    }
+    // Display the current question
+    displayQuestion();
+});
+
+// Display the initial question when the page loads
+displayQuestion();
+</script>
+</body>
+</html>

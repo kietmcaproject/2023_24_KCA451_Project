@@ -1,0 +1,24 @@
+body{
+    background-image: url(movie\ bg.jpg);
+}
+p{
+    width: 60%;
+    margin-left: 300px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.options{
+    color: white;
+    width: 50%;
+    margin-left: 330px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin-top: 10px;
+    height: 30px;
+}
+.options:hover{
+    background-color: orangered;
+}

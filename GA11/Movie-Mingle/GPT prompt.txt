@@ -1,0 +1,5 @@
+suggest me 50 movie names(can include Bollywood, korean and hollywood) which are related to the keywords given below and also give result in a single string each movie name is separated by  and no statement other than my result i will use it as input in my project so only a single string in result, example for the format of the result is monaspiderman-2harry potter and the goblet of fireBatman vs superman The Jungle Book generate movie name for these kewords
+Action, Classic, Hollywood
+
+suggest me 10 movie Titles(result must not include titles other than Bollywood, korean and hollywood movies) which are related to the keywords given below and also give result in a single string each movie name is separated by || and no statement other than my result i will use it as input in my project so only a single string in result, example for the format of the result is "The Usual Suspects||Dead Silence||Shutter Island||Memento||The Mist||Orphan||mona||spiderman-2||harry potter and the goblet of fire||Batman vs superman|| The Jungle Book" generate movie name for these kewords:
+Action, Classic
