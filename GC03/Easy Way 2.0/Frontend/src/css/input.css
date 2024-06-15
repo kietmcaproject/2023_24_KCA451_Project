@@ -1,0 +1,34 @@
+.input-box{
+    height: 40px;
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 20px;
+    padding-left: 15px !important;
+    border-radius: 5px;
+    border: 0px !important;
+    outline: none;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+input[type="textarea"] {
+    height: auto !important;
+}
+
+/* input[type="password"] {
+    padding-right: 33px;
+} */
+
+input[type="text"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus {
+    /* border: 1px solid #6568fa; */
+    box-shadow: 0px 0px 10px #6568f4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

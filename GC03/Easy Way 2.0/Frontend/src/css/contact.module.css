@@ -1,0 +1,278 @@
+@media only screen and (max-width: 768px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    background-color: #afaaff;
+    border-radius: .45rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  .heading {
+    color: var(--primary);
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .msg {
+    margin: 2rem;
+    max-width: 35rem;
+    margin-left: 0rem;
+    font-size: 1.10em;
+  }
+
+  .phone {
+    margin: 1rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email {
+    margin: 1rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name_field,
+  .email_field,
+  .send_field,
+  .phone_field,
+  .user_msg_field {
+    width: 100%;
+  }
+
+  .name_field,
+  .email_field,
+  .send_field,
+  .phone_field,
+  .user_msg_field {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    min-width: 100%;
+    padding: .70rem 0rem;
+    padding-left: 0.5rem;
+    margin: .75rem 0rem;
+    border-radius: 5px;
+  }
+
+  .user_msg_field {
+    resize: none;
+  }
+
+  .send_field {
+    background-image: linear-gradient(to right, #24C6DC 0%, #218dd0 51%, #6ddae9 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-color: transparent;
+    border-radius: 5px;
+  }
+
+  .email_div {
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+
+  .email_value {
+    font-weight: normal;
+    color: gray;
+    font-size: 130%;
+  }
+
+  .email_label {
+    margin-bottom: .45em;
+    font-size: large;
+  }
+
+  .phone_div {
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+
+  .phone_value {
+    font-weight: normal;
+    color: gray;
+    font-size: 130%;
+  }
+
+  .phone_label {
+    margin-bottom: .45em;
+    font-size: large;
+  }
+
+  .left_sub>div:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .main_container {
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+    justify-content: center;
+    flex-flow: row wrap;
+    -ms-overflow-style: none;
+    overflow: hidden;
+  }
+
+  .left {
+    display: flex;
+    /* justify-self: flex-start; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+  }
+
+  .right {
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 40%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    background-color: #cfdbfd;
+    border-radius: 0.45rem;
+    /* margin-right: 1rem; */
+    /* margin-top: 2rem; */
+  }
+
+  .heading {
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .heading_down {
+    margin-top: 20px;
+    font-size: 1.3rem !important;
+  }
+
+  .msg {
+    margin: 2rem;
+    max-width: 35rem;
+    margin-left: 0rem;
+    font-size: 1.4rem;
+  }
+
+  .phone {
+    margin: 1rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .email {
+    margin: 1rem;
+    margin-left: 0rem;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+  }
+
+  .name_field,
+  .email_field,
+  .send_field,
+  .phone_field,
+  .user_msg_field {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .name_field,
+  .email_field,
+  .send_field,
+  .phone_field,
+  .user_msg_field {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    min-width: 100%;
+    padding: .70rem 0rem;
+    padding-left: 0.5rem;
+    margin: .75rem 0rem;
+    border-radius: 5px;
+  }
+
+  .user_msg_field {
+    resize: none;
+  }
+
+  .send_field {
+    background-image: linear-gradient(to right, #24C6DC 0%, #218dd0 51%, #6ddae9 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-color: transparent;
+    border-radius: 5px;
+  }
+
+  .email_div {
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+
+  .email_value {
+    font-weight: normal;
+    color: gray;
+    font-size: 130%;
+  }
+
+  .email_label {
+    margin-bottom: .45em;
+    font-size: large;
+  }
+
+  .phone_div {
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+
+  .phone_value {
+    font-weight: normal;
+    color: gray;
+    font-size: 130%;
+  }
+
+  .phone_label {
+    margin-bottom: .45em;
+    font-size: large;
+  }
+
+  .left_sub>div:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+}

@@ -1,0 +1,14 @@
+
+/* footer */
+.footer{
+    text-align: center;
+    background-color: #acacac;
+    color: black;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.footer span{
+    color: #2d157d;
+    font-weight: bold;
+}
