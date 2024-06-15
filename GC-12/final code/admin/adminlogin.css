@@ -1,0 +1,32 @@
+.image {
+    background: url('https://images2.alphacoders.com/261/26102.jpg');
+    background-size: 100%;
+    height: 1000px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    z-index: -1;
+}
+
+.h4 {
+    color: white;
+}
+
+.member {
+    color: white
+}
+
+.container {
+    z-index: 2;
+}
+
+.tt{
+    border: none;
+    outline: none;
+    background: none;
+    color:black;
+    font-size: 15px;
+    
+}

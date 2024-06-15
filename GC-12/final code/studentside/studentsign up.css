@@ -1,0 +1,78 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(ax.webp)no-repeat;
+    background-size: cover;
+}
+.signup{
+    width: 280px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 15px;
+    max-height: 100%;
+}
+.signup h2{
+    border-bottom: 6px solid white;
+    margin-bottom: 30px;
+}
+.textbox1{
+    overflow: hidden;
+    font-size:15px;
+    padding: 8px;
+    margin: 0px 6px 12px;
+    border-bottom: 1px solid black;
+}
+.tt{
+    border: none;
+    outline: none;
+    background: none;
+    color:black;
+    font-size: 15px;
+    
+}
+.gender1{
+    font-size: 14px;
+    color: black;
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+.date1{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.select1{
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.btnn{
+    width:100%;
+    background: none;
+    border: 2px solid rgb(1, 1, 14);
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+.alert {
+    padding: 20px;
+    width:30%;
+    float: right;
+    background-color: #f44336;
+    color: white;
+  }
+  
+.close{
+    cursor: pointer;
+  }
+  
+.close:hover{
+    color: red;
+  }
