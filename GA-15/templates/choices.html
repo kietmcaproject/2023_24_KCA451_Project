@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block Content %}
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Fill out the form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {% comment %} <form id="myForm"    method="post"> {% endcomment %}
+          <form class="mx-1 mx-md-4" id="registrationForm" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p id="error_msg" style="background-color: rgba(255, 107, 107, 0.676); text-align: center;  border-radius: 5px;">{{error}}</p>
+            <div class="mb-3">
+              <label for="field_choice" class="form-label">Select a topic to ask about</label>
+              <select class="form-select" id="field_choice" name="field_choice" required>
+                <option selected disabled>Click and Select</option>
+                <option value="MERN">MERN</option>
+                <option value="JAVA">Java</option>
+                <option value="Python">Python</option>
+                <option value="Full Stack">Full Stack</option>
+              </select>
+            </div>
+            
+            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button type="submit" class="btn btn-primary btn-lg">Select</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to open modal on page load -->
+
+<script src="/static/js/choice.js/"></script> 
+{% endblock Content %}

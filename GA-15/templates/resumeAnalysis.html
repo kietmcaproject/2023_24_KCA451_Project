@@ -1,0 +1,80 @@
+{% extends "base.html" %} {% block Content %} 
+
+    <style>
+      img{
+        width: 650px;
+        
+      }
+      .feedback{
+        margin-left: 100px;
+        margin-top: 34px;
+      }
+    </style>
+
+
+    <div class="container">
+      
+      
+      <form class="mx-1 mx-md-4" id="pdfForm" method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="resume_file" class="form-label">
+            Upload your resume (For now we accept image files only)
+          </label>
+          
+          <input type="file" class="form-control" id="pdfInput" name="resume_file"  accept="image/*"/>
+        </div>
+        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+          
+          <button type="submit" class="btn btn-primary btn-lg">Start Analysis</button>
+        </div>
+          
+      </form>
+      {% if encoded_resume_file_name %}
+      <div class="row"> 
+        <div class="col-md-5">
+          <div id="imageContainer" > 
+            
+            <img src="/media/{{ encoded_resume_file_name }}/" alt="image" class="img-fluid">
+        
+          </div>
+        </div>
+        <div class="col-md-6 feedback">
+          <h2>Detailed Resume Analysis</h2>
+          <ul>
+            <!-- <li><b>Resume Score:</b> {{ resume_score }}</li> -->
+
+            <!-- Add more related information as needed -->
+          </ul>
+            <div id="feedback"> </div>
+              
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+
+
+
+    <script>
+      var feedback = document.getElementById('feedback');
+      var resume_type = document.getElementById('resume_type');
+    
+      document.addEventListener('DOMContentLoaded', function() {
+        // Assume responseData contains HTML content received from the backend
+        var responseData = `{{ resume_feedback }}`;
+        
+        responseData = responseData.replace('Your resume is suited for', '<br> <br> <b>• Your resume is suited for - </b>')
+        
+        // Set the sanitized HTML content to an element
+
+        feedback.innerHTML = responseData;
+      });
+      
+      
+    </script>
+  </body>
+</html>
+
+{% endblock Content %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+{% block Content %} 
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<div class="container contact-form" style="height: 590px">
+    <div class="contact-image d-flex align-items-center justify-content-center">
+        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+    </div>
+    <form id="contact-form" method="post">
+        {% csrf_token %}
+        <h3>Drop Us a Message</h3>
+       <div class="row">
+            <div class="col-md-6">
+                
+                <div class="d-flex flex-row align-items-center mb-4">                    
+                    <i class="bi bi-person-fill fa-lg m-1 "></i>
+                    <div class="form-outline flex-fill mb-0">
+                        <input type="text" name = "txtName" id = "user_name" class="form-control" placeholder='Your Name *'  required/>
+                    </div>
+                </div>
+                
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="bi bi-envelope-fill fa-lg m-1 "></i>
+                    <div class="form-outline flex-fill mb-0">
+                        <input type="email" name = "txtEmail" id = "email" class="form-control" placeholder='Your Email *' required/>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="bi bi-telephone-fill fa-lg m-1 "></i>
+                    <div class="form-outline flex-fill mb-0">
+                        <input type="phone" name = "txtPhone" id = "phone" class="form-control" placeholder='Your Phone Number *' required/>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea name="txtMsg" class="form-control" placeholder="Your Message..." style="width: 100%; height: 160px;"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary btn-lg mx-2">Send Message</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% endblock %}

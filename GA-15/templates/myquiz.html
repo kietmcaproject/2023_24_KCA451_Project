@@ -1,0 +1,114 @@
+{% extends "base.html" %} {% block Content %}
+<link rel="stylesheet" href="/static/css/quiz_style.css" />
+<section class="main">
+  <div class="container">
+    <div class="col">
+      <h3 id="questionBox">
+        1) Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
+      </h3>
+    </div>
+    <div class="col box">
+      <input name="option" type="radio" id="first" value="a" required />
+      <label for="first">Testing 1</label>
+    </div>
+    <div class="col box">
+      <input name="option" type="radio" id="second" value="b" required />
+      <label for="second">Testing 2</label>
+    </div>
+    <div class="col box">
+      <input name="option" type="radio" id="third" value="c" required />
+      <label for="third">Testing 3</label>
+    </div>
+    <div class="col box">
+      <input name="option" type="radio" id="fourth" value="d" required />
+      <label for="fourth">Testing 4</label>
+    </div>
+    <button id="submit">Submit</button>
+  </div>
+</section>
+<script>
+  let correct = 0,
+  incorrect = 0,
+  total = 0; // Initialize variables outside fetch
+  let correct_option = ""
+
+  fetch("/get-quiz-data/")
+  .then((response) => response.json())
+  .then((quizData) => {
+      total = quizData.length;
+      let index = 0;
+      console.log("total ", total);
+      let questionBox = document.getElementById("questionBox");
+      let allInputs = document.querySelectorAll("input[type='radio']");
+
+      const loadQuestion = () => {
+          if (total === index) {
+              return quizEnd();
+          }
+          reset();
+          const data = quizData[index];
+          questionBox.innerHTML = `${index + 1}) ${data.quetion}`;
+          allInputs[0].nextElementSibling.innerText = data.option_a;
+          allInputs[0].value = data.option_a;
+          allInputs[1].nextElementSibling.innerText = data.option_b;
+          allInputs[1].value = data.option_b;
+          allInputs[2].nextElementSibling.innerText = data.obtion_c;
+          allInputs[2].value = data.obtion_c;
+          allInputs[3].nextElementSibling.innerText = data.option_d;
+          allInputs[3].value = data.option_d;
+          correct_option = data.correct_option;
+          //console.log("correct option", correct_option)
+        };
+        
+        document.querySelector("#submit").addEventListener("click", function () {
+          const data = quizData[index];
+          console.log("data variable", data);
+          const ans = getAnswer();
+          console.log("ans variable", ans);
+          console.log("correct option", correct_option)
+
+          if (ans.toLowerCase() == data.correct_option.toLowerCase()) {
+              correct++;
+          } else {
+              incorrect++;
+          }
+          console.log("correct", correct);
+          console.log("incorrect", incorrect);
+          index++;
+          loadQuestion();
+      });
+
+      const getAnswer = () => {
+          for (let i = 0; i < allInputs.length; i++) {
+              if (allInputs[i].checked) {
+                  console.log(`Selected answer: ${allInputs[i].value}`);
+                  return allInputs[i].value;
+              }
+          }
+          return null;
+      };
+
+      const reset = () => {
+          allInputs.forEach((input) => {
+              input.checked = false;
+          });
+      };
+
+      const quizEnd = () => {
+          document.getElementsByClassName("container")[0].innerHTML = `
+              <div class="col">
+                  <h3 class="w-100">Hi, you've scored ${correct} / ${total}</h3>
+              </div>
+          `;
+      };
+
+      loadQuestion();
+  })
+  .catch((error) => {
+      console.error("Error fetching quiz data:", error);
+  });
+
+</script>
+{% comment %}
+<script src="/static/js/quiz.js"></script>
+{% endcomment %} {% endblock Content %}
