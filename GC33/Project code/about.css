@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ body{
+    background-image: url(image2.jpg);
+    background-size: cover;
+ }
+ .container{
+    display: flex;
+    margin: 2%;
+ }
+ .head{
+    margin-top: 10px;
+ }
+ #auto{
+    color: rgb(255, 255, 255);
+ }
+ nav{
+    justify-content: right;
+    display: flex;
+   margin-right: 10%; margin-top: -60px;
+ }
+ nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+ }
+ nav a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+ }
+
+ 
+ 

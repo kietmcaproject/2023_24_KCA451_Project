@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash service</title>
+    <link rel="stylesheet" href="periodic.css">
+</head>
+<header>
+    <div class="logo">
+        <img src="logo2.png" alt="This is a logo" width="100px">
+        <h1 id="auto">Automotive Services</h1>
+
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>&emsp;&emsp;&emsp;
+        <a href="about.html">About</a>&emsp;&emsp;&emsp;
+        <a href="indexService1.html">Services</a>&emsp;&emsp;&emsp;
+        <a href="signup.php">Sign Up</a>&emsp;&emsp;&emsp; 
+        <a href="login.php">Login</a>
+
+    </nav>
+</header>
+
+<body>
+    <h1 id="ps">Car Wash & Cleaning</h1>
+    <div class="card-container">
+        <div class="service-container1">
+            <div class="service1">
+                <img src="w1.png" alt="This is an image">
+            </div>
+            <div class="card-content">
+                <h2>360 Deep Cleaning</h2>
+                <p>
+                   1 Month Warranty<br>
+                   Brand new Festive Look<br>
+                   Exterior Rubbing & Polishing<br>
+                   Interior Wet Shampooing & Detailing<br>
+                   Interior Vacuum Cleaning<br>
+                   Pressure Washing<br>
+                   Tyre Dressing & Alloy Polishing<br>
+                   Free Pickup & Drop<br>
+                </p> 
+
+             <!--    <h3>INR 10499</h3>
+
+                <button class="btn"> Add Service</button> -->
+
+            </div>
+        </div>
+        <div class="service-container2">
+            <div class="service2">
+                <img src="w2.png" alt="This is an image">
+            </div>
+            <div class="card-content">
+                <h2>Premium Top Wash </h2> 
+                <p>
+                    Applicable on walk-in Only<br>
+                    Preserving Paint & Finish<br>
+                    Exterior Top Wash<br>
+                    Hand Drying<br>
+                    Tyre external wash<br>
+                    Rinsing<br>
+                 </p> 
+               <!--
+                <h3>INR 12499</h3>
+                <button class="btn">Add Service</button>  --> 
+
+
+            </div>
+        </div>
+        <div class="service-container2">
+            <div class="service2">
+                <img src="w3.png" alt="This is an image">
+            </div>
+            <div class="card-content">
+                <h2>Car Wash & Wax</h2> 
+                <p>
+                    Maintains Car Shine <br>
+                    Recommended Every 2 months <br>
+                    Car Wash<br>
+                    Interior Vacuuming<br>
+                    Dashboard and Tyre Polish<br>
+                    Body Wax<br>
+                 </p> 
+               <!--
+                <h3>INR 12499</h3>
+                <button class="btn">Add Service</button>  --> 
+
+
+            </div>
+        </div>
+        <div class="service-container3">
+            <div class="service3">
+                <img src="w4.png" alt="This is an image">
+            </div>
+            <div class="card-content">
+                <h2>Car Rubbing & Polishing</h2> 
+                <p>
+                    Takes 6 Hours <br>
+                    Machine Rubbing with Compound<br>
+                    Pressure Car Wash<br>
+                    Alloy Polishing<br>
+                    Wax Polishing<br>
+                    Tyre Dressing<br>
+                 </p> 
+                      <!-- 
+                <h3>INR 15499</h3>
+                <button class="btn">Add Service</button> -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="request">
+            <h1>Send the Request</h1>
+        </div>
+
+        <div class="formdiv">
+
+
+            <form action="periodic.php" method="post">
+            <label for="" class="label">Username : </label><br>
+                <input type="text" class="input" name="username" required placeholder="Enter your username"> <br><br>
+                          
+                <label for="" class="label">Address : </label><br>
+                <input type="text" class="input" name="address" required placeholder="Enter your address"> <br><br>
+
+
+                <label for="" class="label">Brand : </label><br>
+                <select id="cars" name="brand" class="input">
+                    <option value="NA">Select your brand</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Saab">Saab</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Audi">Audi</option>
+                </select><br>
+                <br>
+                <label for="" class="label">Model : </label><br>
+                <input type="text" class="input" name="model" required placeholder="Enter your model of your car"> <br><br>
+
+               <!-- <label for="" class="label">Fuel-type : </label><br>
+                <select id="cars" name="fueltype" class="input">
+                    <option value="NA">Select your fuel type</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                </select><br><br>
+
+                <label for="" class="label">Service-type : </label><br>
+                <select id="cars" name="servicetype" class="input">
+                    <option value="NA">Select your service type</option>
+                    <option value="Periodic service">Periodic service</option>
+                    <option value="AC service">AC service</option>
+                    <option value="Wheel Care service">Wheel Care service</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br><br> --> 
+
+                <label for="" class="label">Service-plan : </label><br>
+                <select id="cars" name="serviceplan" class="input">
+                    <option value="NA">Select your service plan</option>
+                    <option value="360 Deep Cleaning">360 Deep Cleaning</option>  
+                    <option value="Premium Top Wash">Premium Top Wash</option>
+                    <option value="Car Wash & Wax"> Car Wash & Wax</option>
+                    <option value="Car Rubbing & Polishing"> Car Rubbing & Polishing</option>
+
+                </select><br><br>
+
+                <!--
+                <label for="" class="label">Additional-service : </label><br>
+                <input type="text" class="input" name="additionalservice"> <br><br>   -->
+
+                <input type="submit" name="submit" class="requestbtn">
+
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
+<!--
+    
+
+<?php
+
+//echo'Connected successfuly';
+//echo"<script>alert('Account created successfully.')</script>";
+if(isset($_POST["submit"]))
+{
+    echo'Connected successfuly';
+    
+    $con = mysqli_connect('localhost', 'root', '', 'vehicle');
+    
+    $Address=$_POST["address"];
+    $Brand=$_POST["brand"];
+    $Model=$_POST["model"];
+    $Fuel=$_POST["fueltype"];
+    $Service=$_POST["servicetype"];
+    $Servi=$_POST["serviceplan"];
+    $Additional=$_POST["additionalservice"];
+    $Username=$_POST["username"];
+
+
+    $sql="insert into request values('$Username','$Address','$Brand','$Model','$Fuel','$Service','$Servi','$Additional')";
+    mysqli_query($con,$sql);
+
+    echo"<script>alert('Request send successfully. Within 30 minutes our team will contact you.')</script>";
+
+}
+
+?>
+
+    
+</body>
+</html>
+-->

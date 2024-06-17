@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+.card{
+    width: 47%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: rgb(199, 214, 214);
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: rgb(71, 69, 69);
+}
+.card-content .btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 16px; 
+}
+.card-content .btn:hover{
+    background-color: rgb(99, 77, 77);
+}
+ /* @media only screen and (min-width: 200px) {
+    .card{
+        width:100%;
+    }
+    body {
+      background-color: lightgreen;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .card{
+        width: 47%;
+    }
+    body {
+      background-color: rgb(129, 221, 228);
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .card{
+        width: 47%;
+    }
+    
+    
+  }*/
+  @media only screen and (min-width: 400px) {
+    .card{
+        width: 47%;
+    }
+}
+
+  .logo{
+    display: flex;
+ }
+ nav{
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+    
+ }
+ nav a{
+    text-decoration: none;
+    color: white;
+    margin-top: -2%;
+ }
+ nav a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+ }
+ header{
+    background-image: url(image.jpg);
+    padding: 1%;
+ }
+ header h1{
+    color: white;
+    font-size:x-large;
+    margin-top: 1.3%;
+ }
