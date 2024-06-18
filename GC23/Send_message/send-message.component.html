@@ -1,0 +1,30 @@
+<!-- <div class="send-box">
+    <form [formGroup]="SendMsgForm" >
+        <input type="text" class="form-control" #message formControlName="message" aria-label="message…" placeholder="Write message…" style="left:0;" required>
+        <button type="button" (click)="send_message()"> Send</button>
+    </form>
+  
+</div> -->
+<div class="send-box input-group ">
+    <form [formGroup]="SendMsgForm"
+        style="width:100%;display:flex; justify-content: space-between;align-items: space-between;">
+        <input *ngIf="!show_when_img_selected" type="text" class="form-control" #message formControlName="message" aria-label="message…"
+            placeholder="Write message…" style="left:0;" required>
+            <!-- image selected div comes here -->
+            <!-- //when image selected show this --> 
+                <div *ngIf="show_when_img_selected" style=" display: block;background: lightgreen;width: 80%;padding: 0.5rem;display: flex;justify-content: center;align-items: center;position: relative;border:1px solid green;">
+                    <span style="position: absolute;right:0;top:0;padding:0.3rem;margin:0;" (click)="deSelectImage()"><i class="fa fa-close"></i></span>
+                    <p style="margin-bottom:0;"> {{filename}} <span> <i class="fa fa-picture-o" aria-hidden="true"></i></span></p>
+                </div>  
+            <!-- image selected div ends here -->
+        <!-- //for image -->
+        <input type="file" class="btn btn-success"
+            style="width:3rem;text-align:center;visibility: hidden;position:absolute;margin:0.5rem;" id="upload-button">
+        <label for=""></label>
+        <input type="file" (change)="onFileSelected($event)" formControlName="image" #image>
+        <button class="btn btn-outline-secondary" style="background-color:#0d6efd;" type="button" *ngIf="button=='msg'" (click)="send_message()">Send Message</button>
+        <button class="btn btn-outline-secondary" type="button" style="background-color: #198754;"  *ngIf="button=='img'" (click)="send_image()">Send Image</button>
+        <button class="btn btn-outline-secondary" (click)="load()">Refresh chats</button>
+    </form>
+</div>
+

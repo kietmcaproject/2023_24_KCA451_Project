@@ -1,0 +1,79 @@
+
+.send-box {
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.send-box form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.send-box .form-control {
+    display: block;
+    width: 85%;
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.send-box button {
+    border: none;
+    background: #3867d6;
+    padding: 0.375rem 5px;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    font-weight: 400;
+    width: 24%;
+    margin-left: 1%;
+}
+
+.send-box button i {
+    margin-right: 5px;
+}
+
+.send-btns .button-wrapper {
+    position: relative;
+    width: 125px;
+    height: auto;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    background: #F6F7FA;
+    border-radius: 3px;
+    padding: 5px 15px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.send-btns .button-wrapper span.label {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    color: #343945;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 13px;
+}
