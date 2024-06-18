@@ -1,0 +1,65 @@
+<div class="chatbox">
+    <div class="modal-dialog-scrollable" >
+        <div class="modal-content">
+            <div class="msg-head" style="padding: 1rem;">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="d-flex align-items-center">
+                            <span class="chat-icon"><img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/arroleftt.svg" alt="image title"></span>
+                            <div class="flex-shrink-0">
+                                <img class="img-fluid user-list-imgs" src="../../assets/images/profile2.jpg" alt="user img" >
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h3> {{username}}</h3>
+                                <!-- <p>front end developer</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal-body" style="  height: 100vh;" #messageBody id="messageBody"
+            > 
+                <div class="msg-body" style="padding:1rem;"  >
+                    <!-- friend is the sender and replay is the currently loggedin user -->
+                    <ul *ngFor="let chat of all_chats" class="my-custom-scrollbar" #scroll>
+                        <!-- check the type of content -->
+                        <ng-container *ngIf="chat.type=='msg'">
+                            <li class="sender" *ngIf="chat.sender == user_id">
+                                <p> {{chat.message}}</p>
+                                <span class="time">{{chat.timestamp}}</span>
+                            </li>
+                            <li class="repaly" *ngIf="chat.sender != user_id">
+                                <p> {{chat.message}}</p>
+                                <span class="time">{{chat.timestamp}}</span>
+                            </li>
+                        </ng-container>
+                        <ng-container *ngIf="chat.type=='image'">
+                            <li class="sender" *ngIf="chat.sender == user_id">
+                                <img [src]='chat.message' alt="" style="    width: 150px;
+                                height: 150px;
+                                border: 3px solid lightblue;
+                                padding: 0.2rem;">
+                                <span class="time">{{chat.timestamp}}</span>
+                            </li>
+                            <li class="repaly" *ngIf="chat.sender != user_id">
+                                <img [src]='chat.message' alt="" style="    width: 150px;
+                                height: 150px;
+                                border: 3px solid lightblue;
+                                padding: 0.2rem;">
+                                <span class="time">{{chat.timestamp}}</span>
+                            </li>
+                        </ng-container>
+
+                    </ul>
+                </div>
+            </div>
+
+
+           <!-- send message button comes here -->
+           <app-send-message [id_of_receiver]="user_id" (refresh_chats)="reload_chats()"></app-send-message>
+    </div>
+</div>
+
+<!-- chatbox -->
