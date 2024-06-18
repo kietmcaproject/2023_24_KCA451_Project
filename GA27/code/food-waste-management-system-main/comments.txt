@@ -1,0 +1,12 @@
+Download the project zip file
+Extract the file and copy the folder
+Paste inside root directory(for xampp xampp/htdocs, for wamp wamp/www, for lamp var/www/Html)
+Open PHPMyAdmin (http://localhost/phpmyadmin)
+Create a database
+Import demo.sql file(inside database folder)
+Run the script http://localhost/folderName
+Run the script http://localhost/food-waste-management-system-main
+
+admin
+gmail- vvikaskgupta86@gmail.com
+pass- vikas123
