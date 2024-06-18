@@ -1,0 +1,468 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ankush123",
+      "password": "Ankush@123",
+      "email": "ankushpanchal144@gmail.com",
+      "profile": "../../assets/images/profile1.jpg",
+      "mobile":"+91 9636933013",
+      "friends": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": 2,
+      "username": "shivam@123",
+      "password": "shivam@123",
+      "email": "shivam123@gmail.com",
+      "profile": "../../assets/images/profile2.jpg",
+      "mobile":"+91 9636933012",
+      "friends": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "id": 3,
+      "username": "ram@123",
+      "password": "ram@123",
+      "email": "ram123@gmail.com",
+      "profile": "../../assets/images/profile2.jpg",
+      "mobile":"+91 9636933013",
+      "friends": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "username": "riya_mathur",
+      "email": "riyamathur121@gmail.com",
+      "password": "Riya@123",
+      "cpassword": "Riya@123",
+      "profile": "../../assets/images/profile3.webp",
+      "mobile":"+91 9636933014",
+      "chats": {},
+      "id": 4
+    }
+  ],
+  "chats": [
+    {
+      "id": 1,
+      "sender": "1",
+      "receiver": "2",
+      "timestamp": "11/01/2023, 11:00:37 PM",
+      "message": "Hi",
+      "type": "msg"
+    },
+    {
+      "id": 2,
+      "sender": "2",
+      "receiver": "1",
+      "timestamp": "11/01/2023, 11:01:00 AM",
+      "message": "Hi,How are you?",
+      "type": "msg"
+    },
+    {
+      "id": 3,
+      "sender": "1",
+      "receiver": "2",
+      "timestamp": "11/01/2023, 11:01:37 PM",
+      "message": "I am fine! What about you?",
+      "type": "msg"
+    },
+    {
+      "id": 4,
+      "sender": "2",
+      "receiver": "1",
+      "timestamp": "11/01/2023, 11:02:00 PM",
+      "message": "I am also fine",
+      "type": "msg"
+    },
+    {
+      "id": 5,
+      "sender": "1",
+      "receiver": "3",
+      "timestamp": "12/01/2023, 11:00:37 PM",
+      "message": "Hi,kese ho?",
+      "type": "msg"
+    },
+    {
+      "id": 6,
+      "sender": "3",
+      "receiver": "1",
+      "timestamp": "12/01/2023, 11:01:00 PM",
+      "message": "Hi,I am Majama,How are you?",
+      "type": "msg"
+    },
+    {
+      "id": 7,
+      "sender": "1",
+      "receiver": "3",
+      "timestamp": "12/01/2023, 11:01:37 PM",
+      "message": "ekdum majama",
+      "type": "msg"
+    },
+    {
+      "id": 8,
+      "sender": "3",
+      "receiver": "1",
+      "timestamp": "12/01/2023, 11:02:00 PM",
+      "message": "OK",
+      "type": "msg"
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:26:50 PM",
+      "message": "../../assets/images/profile2.jpg",
+      "id": 29,
+      "type": "image"
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:30:06 PM",
+      "message": "123213",
+      "type": "msg",
+      "id": 30
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:30:12 PM",
+      "message": "Hello",
+      "type": "msg",
+      "id": 31
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:30:26 PM",
+      "message": "../../assets/images/profile1.jpg",
+      "type": "image",
+      "id": 32
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:40:08 PM",
+      "message": "../../assets/images/profile2.jpg",
+      "type": "image",
+      "id": 33
+    },
+    {
+      "sender": 1,
+      "receiver": 3,
+      "timestamp": "5/15/2023, 5:50:49 PM",
+      "message": "../../assets/images/profile1.jpg",
+      "type": "image",
+      "id": 34
+    },
+    {
+      "sender": 1,
+      "receiver": 3,
+      "timestamp": "5/15/2023, 5:54:16 PM",
+      "message": "so this my photo",
+      "type": "msg",
+      "id": 35
+    },
+    {
+      "sender": 1,
+      "receiver": 3,
+      "timestamp": "5/15/2023, 5:54:37 PM",
+      "message": "\t😀 ",
+      "type": "msg",
+      "id": 36
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:58:20 PM",
+      "message": "../../assets/images/profile3.webp",
+      "type": "image",
+      "id": 37
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:59:21 PM",
+      "message": "../../assets/images/profile1.jpg",
+      "type": "image",
+      "id": 38
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 5:59:37 PM",
+      "message": "../../assets/images/profile3.webp",
+      "type": "image",
+      "id": 39
+    },
+    {
+      "sender": 1,
+      "receiver": 3,
+      "timestamp": "5/15/2023, 5:59:51 PM",
+      "message": "../../assets/images/profile1.jpg",
+      "type": "image",
+      "id": 40
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 6:19:46 PM",
+      "message": "../../assets/images/profile1.jpg",
+      "type": "image",
+      "id": 41
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/15/2023, 6:46:46 PM",
+      "message": "../../assets/images/profile3.webp",
+      "type": "image",
+      "id": 42
+    },
+    {
+      "sender": 1,
+      "receiver": 2,
+      "timestamp": "5/16/2023, 11:37:11 AM",
+      "message": "../../assets/images/profile1.jpg",
+      "type": "image",
+      "id": 43
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:02:53 AM",
+      "message": "ok",
+      "type": "msg",
+      "id": 44
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:02:59 AM",
+      "message": "yeah",
+      "type": "msg",
+      "id": 45
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:08:17 AM",
+      "message": "121212",
+      "type": "msg",
+      "id": 46
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:10:05 AM",
+      "message": "121212",
+      "type": "msg",
+      "id": 47
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:10:09 AM",
+      "message": "asas",
+      "type": "msg",
+      "id": 48
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:12:45 AM",
+      "message": "hii",
+      "type": "msg",
+      "id": 49
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:21:31 AM",
+      "message": "we",
+      "type": "msg",
+      "id": 50
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:21:43 AM",
+      "message": "we",
+      "type": "msg",
+      "id": 51
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:23:04 AM",
+      "message": "that is funny",
+      "type": "msg",
+      "id": 52
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:04 AM",
+      "message": "werew",
+      "type": "msg",
+      "id": 53
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:09 AM",
+      "message": "tere",
+      "type": "msg",
+      "id": 54
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:17 AM",
+      "message": "asdsadsad",
+      "type": "msg",
+      "id": 55
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:21 AM",
+      "message": "asdadadsdasdsd",
+      "type": "msg",
+      "id": 56
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:27 AM",
+      "message": "asdfsafsfsafasfsadf",
+      "type": "msg",
+      "id": 57
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:33 AM",
+      "message": "asfsadfasfdasf",
+      "type": "msg",
+      "id": 58
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:24:49 AM",
+      "message": "yeah that is fine but ",
+      "type": "msg",
+      "id": 59
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:27:43 AM",
+      "message": "qwqwqw",
+      "type": "msg",
+      "id": 60
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:28:26 AM",
+      "message": "yeah",
+      "type": "msg",
+      "id": 61
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:29:23 AM",
+      "message": "we are",
+      "type": "msg",
+      "id": 62
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:29:29 AM",
+      "message": "we are",
+      "type": "msg",
+      "id": 63
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:29:33 AM",
+      "message": "we are",
+      "type": "msg",
+      "id": 64
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:29:40 AM",
+      "message": "we are",
+      "type": "msg",
+      "id": 65
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:30:03 AM",
+      "message": "hii",
+      "type": "msg",
+      "id": 66
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:30:12 AM",
+      "message": "how's life",
+      "type": "msg",
+      "id": 67
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:30:50 AM",
+      "message": "../../assets/images/profile3.webp",
+      "type": "image",
+      "id": 68
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:37:24 AM",
+      "message": "../../assets/images/profile3.webp",
+      "type": "image",
+      "id": 69
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 10:37:59 AM",
+      "message": "hey what is going on ?",
+      "type": "msg",
+      "id": 70
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 2:06:52 PM",
+      "message": "what is going on ?",
+      "type": "msg",
+      "id": 71
+    },
+    {
+      "sender": 1,
+      "receiver": "2",
+      "timestamp": "5/17/2023, 2:08:24 PM",
+      "message": "../../assets/images/profile3.webp",
+      "type": "image",
+      "id": 72
+    }
+  ]
+}
