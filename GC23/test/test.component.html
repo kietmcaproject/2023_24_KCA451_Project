@@ -1,0 +1,39 @@
+<div style="margin: 50px auto;width: 50%;">
+    <h2>Please select a file: </h2>
+    <input type="file" (input)="onFileChange($event)" multiple="false">
+</div>
+
+<!-- table for the excel -->
+
+<div class="container" *ngIf="show_table">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                  <tr >
+                    <th scope="col" *ngFor="let header_col of fileData[0];let indexOfelementOuter=index;">
+                        <ng-container *ngIf="indexOfelementOuter!=0">
+                            {{header_col}}
+                        </ng-container>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let row of fileData;let indexOfelementOuter=index;" [attr.id]="'row'+indexOfelementOuter">
+                    <ng-container *ngIf="indexOfelementOuter!=0">
+                        <td *ngFor="let col of row;let indexOfelementInner=index;">
+                            <ng-container *ngIf="indexOfelementInner!=0 && indexOfelementOuter!=0">
+                                <input [readOnly]="editable" [attr.id]="'input'+indexOfelementOuter" type="text" class="form-control data_input" id="usr" value={{col}}>
+                            </ng-container>
+                        </td>
+                        <td *ngIf="indexOfelementOuter!=0">
+                            <button class="btn btn-primary"   [attr.id]="'edit'+indexOfelementOuter" (click)="edit($event,indexOfelementOuter)">Edit</button>
+                            <button class="btn btn-danger" style="display:none" [attr.id]="'update'+indexOfelementOuter" (click)="update($event,indexOfelementOuter)">Update</button>
+                        </td>
+                    </ng-container>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
