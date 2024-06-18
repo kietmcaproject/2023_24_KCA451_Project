@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+    <!-- Login Form -->
+<div class="form-wrapper">
+          <form [formGroup]="SignupForm" (ngSubmit)="signup()">
+            <div >
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                formControlName="username"
+                class="block w-full p-2 border rounded border-gray-500"
+                #username
+              />
+              <div *ngIf="submitted &&  SignupForm.controls.username.errors">
+                <p class="error_box" *ngIf="SignupForm.controls.username.errors.required" >username must contain atleast 8 character and a number,character</p>
+              </div>
+             
+            </div>
+            <div >
+              <label for="username">Email</label>
+              <input
+                type="email"
+                id="email"
+                formControlName="email"
+                class="block w-full p-2 border rounded border-gray-500"
+                #email
+              />
+              <div *ngIf="submitted &&  SignupForm.controls.email.errors">
+               <p class="error_box" *ngIf="SignupForm.controls.email.errors.required">not valid email</p>
+              </div>
+            </div>
+            <div >
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                formControlName="password"
+                class="block w-full p-2 border rounded border-gray-500"
+                #password
+              />
+            <div *ngIf="submitted && SignupForm.controls.password.errors">
+                  <p class="error_box" *ngIf="SignupForm.controls.password.errors.required">Please enter the password</p>
+                  <p class="error_box" *ngIf="SignupForm.controls.password.errors.pattern">Password must contain at least 8 characters including at least one uppercase letter, one lowercase letter, one number, and one special character</p>
+              </div>
+
+             </div>
+            <div >
+              <label for="cpassword">Confirm Password</label>
+              <input
+                type="password"
+                id="cpassword"
+                formControlName="cpassword"
+                class="block w-full p-2 border rounded border-gray-500"
+                #cpassword
+              />
+              <div *ngIf="submitted &&  SignupForm.controls.cpassword.errors">
+                <p class="error_box" *ngIf="submitted &&  SignupForm.controls.cpassword.errors.required">password did not match</p>
+              </div>
+           </div>
+            <div >
+              <label for="password">Profile Picture</label>
+              <input
+                type="file"
+                id="file"
+                formControlName="profile"
+                class="block w-full p-2 border rounded border-gray-500"
+                (change)="onFileSelected($event)"
+                #profile
+                required
+              />
+              <div *ngIf="submitted &&  SignupForm.controls.profile.errors">
+                <p class="error_box" *ngIf="SignupForm.controls.profile.errors.required">please upload profile picture</p>
+              </div>
+            </div>
+            <div class="img-div">
+              <img [src]="path_profile_to_show" class="img-uploaded" alt="">
+            </div>
+            <div *ngIf="username_already_registered" style="color:Red;">
+              username already registered 
+            </div>
+            <div *ngIf="mail_already_registered" style="color:Red;">
+              email already registered 
+            </div>
+            <div >
+              <input
+                type="submit"
+                value="SignUp"
+                class="py-3 bg-green-500 hover:bg-green-600 rounded text-white text-center w-full"
+                style="background-color:#4299e1;margin-top:1rem;"
+                required
+              />
+            </div>
+          </form>
+        </div>
+    
